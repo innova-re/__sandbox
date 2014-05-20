@@ -129,4 +129,4 @@ composer update
 * To start the server with a different php version:
 ```
 /usr/local/bin/php app/console server:run localhost:9090 &
-``
+```
