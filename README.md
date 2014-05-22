@@ -130,3 +130,10 @@ composer update
 ```
 /usr/local/bin/php app/console server:run localhost:9090 &
 ```
+
+### Useful commands
+
+* Flush all cache elements:
+```
+php app/console sonata:cache:flush-all
+```
