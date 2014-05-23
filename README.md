@@ -141,3 +141,5 @@ composer update
 /usr/bin/php ./app/console doctrine:schema:update --force
 
 ```
+
+[Codeship Status](https://www.codeship.io/projects/7ba26a70-c48d-0131-7905-464dc08c7eb5/status)
