@@ -131,3 +131,13 @@ composer update
 ```
 /usr/local/bin/php app/console server:run localhost:9090 &
 ```
+
+* Reinitializing the database/cache
+```
+/usr/local/bin/php ./app/console cache:warmup --env=prod --no-debug
+
+/usr/local/bin/php ./app/console doctrine:database:drop --force
+
+/usr/bin/php ./app/console doctrine:schema:update --force
+
+```
