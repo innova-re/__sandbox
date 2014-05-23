@@ -107,6 +107,8 @@ Enjoy!
 [link_behat]: http://docs.behat.org "the official Behat documentation"
 =======
 
+[Codeship Status](https://www.codeship.io/projects/7ba26a70-c48d-0131-7905-464dc08c7eb5/status)
+
 ### Issues
 
 * you need to install Intl package if it is not installed:
@@ -142,4 +144,3 @@ composer update
 
 ```
 
-[Codeship Status](https://www.codeship.io/projects/7ba26a70-c48d-0131-7905-464dc08c7eb5/status)
