@@ -1,0 +1,18 @@
+default:
+    extensions:
+        Behat\MinkExtension\Extension:
+            base_url:  'http://demo.sonata-project.org/'
+            goutte:     ~
+            #selenium2: ~
+            files_path: .
+
+    context:
+        parameters:
+            base_url:  'http://demo.sonata-project.org/'
+
+    filters:
+        tags: "~@skipped"
+
+wip:
+    filters:
+        tags: "@skipped"
