@@ -105,3 +105,29 @@ To run the Sonata test suites, you can run the command:
 Enjoy!
 
 [link_behat]: http://docs.behat.org "the official Behat documentation"
+=======
+
+### Issues
+
+* you need to install Intl package if it is not installed:
+```
+/usr/local/bin/php -m |grep intl
+intl
+```
+
+* you can get the following error: "It is not safe to rely on the system's timezone settings."
+ ```
+/usr/local/bin/php -i|grep php.ini
+date.timezone = Europe/Rome
+```
+
+* [Symfony\Component\Intl\Exception\InvalidArgumentException]
+Only the locale "en" is supported
+```
+composer update
+```
+
+* To start the server with a different php version:
+```
+/usr/local/bin/php app/console server:run localhost:9090 &
+```
