@@ -97,6 +97,8 @@ doctrine:
                 host:     %database_host%
                 password: %database_password%
                 charset:  UTF8
+                mapping_types:
+                    enum:   string
 
         types:
             json:     Sonata\Doctrine\Types\JsonType
