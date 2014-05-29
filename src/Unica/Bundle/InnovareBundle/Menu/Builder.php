@@ -109,6 +109,7 @@ class Builder extends ContainerAware
         );
         $extras = $factory->createItem('Macroaree', $macroareeExtrasOptions);
 
+        // TODO change the Macroarea routes
         $extras->addChild('Macroarea 1', array('route' => 'page_slug', 'routeParameters' => array('path' => '/bundles')));
         $extras->addChild('Macroarea 2', array('route' => 'page_slug', 'routeParameters' => array('path' => '/api-landing')));
         $extras->addChild('Macroarea 3', array('route' => 'sonata_media_gallery_index'));
