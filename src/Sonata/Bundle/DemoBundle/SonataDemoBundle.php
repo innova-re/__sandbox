@@ -16,5 +16,8 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class SonataDemoBundle extends Bundle
 {
-
+	public function getParent()
+	{
+		return 'ApplicationSonataPageBundle';
+	}
 }
