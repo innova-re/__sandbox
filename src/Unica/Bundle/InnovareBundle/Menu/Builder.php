@@ -70,29 +70,6 @@ class Builder extends ContainerAware
             );
         }
 
-        $dropdownExtrasOptions = $isFooter ? array(
-            'uri' => "#",
-            'attributes' => array('class' => 'span2'),
-            'childrenAttributes' => array('class' => 'nav'),
-        ) : array(
-            'uri' => "#",
-            'attributes' => array('class' => 'dropdown'),
-            'childrenAttributes' => array('class' => 'dropdown-menu'),
-            'linkAttributes' => array('class' => 'dropdown-toggle', 'data-toggle' => 'dropdown', 'data-target' => '#'),
-            'label' => 'Solutions <b class="caret caret-menu"></b>',
-            'extras' => array(
-                'safe_label' => true,
-            )
-        );
-        $extras = $factory->createItem('Discover', $dropdownExtrasOptions);
-
-        // $extras->addChild('Bundles', array('route' => 'page_slug', 'routeParameters' => array('path' => '/bundles')));
-        // $extras->addChild('Api', array('route' => 'page_slug', 'routeParameters' => array('path' => '/api-landing')));
-        // $extras->addChild('Gallery', array('route' => 'sonata_media_gallery_index'));
-        // $extras->addChild('Media & SEO', array('route' => 'sonata_demo_media'));
-
-        $menu->addChild($extras);
-
         $menu->addChild('Admin', array(
             'route' => 'page_slug',
             'routeParameters' => array(
